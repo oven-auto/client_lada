@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "Lada";
+    src: url("./../fonts/Lada.otf") format("opentype");
+}
+.footer{
+    position: fixed;bottom: 0px;left: 0px;
+}
+.footer img{
+    width: 100%;
+}
+h1{
+    font-family: "Lada";
+    font-size: 3rem;
+    color: rgb(115,120,125);
+}
