@@ -1,6 +1,11 @@
 @extends('layouts.front')
 
 @section('content')
+	@isset($issue)
+	<canvas id="canvas" style="z-index:999;width:100%;height: 100vh;position: absolute;top: 0px;left: 0px;"></canvas>
+
+	@include('front.monitor.animation')
+
 	<div class="container-fluid">
 		<div class="row d-flex align-items-center">
 			<div class="col-7">
@@ -19,4 +24,6 @@
 	<div class="footer">
 		<img src="{{asset('storage/footer/bottom.png')}}">
 	</div>
+
+	@endisset
 @endsection

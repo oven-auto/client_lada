@@ -17,6 +17,7 @@ Route::group(['prefix'=>'admin','namespace'=>'Back'],function(){
 	Route::get('/','IssueController@index');
 	Route::resource('/issues', 'IssueController');
 	Route::resource('/cars', 'CarController');
+	Route::resource('/banners','BannerController');
 });
 
 Route::get('/monitor','Front\MonitorController@index');

@@ -10905,7 +10905,7 @@ a.text-dark:focus {
 
 @font-face {
   font-family: "Lada";
-  src: url(/fonts/Lada.otf?f3048d9b0959b116067ca9fdbca5dbbf) format("opentype");
+  src: url("/../fonts/Lada.otf") format("opentype");
 }
 
 .footer {

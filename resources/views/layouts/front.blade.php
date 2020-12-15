@@ -19,12 +19,12 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-    <meta http-equiv="refresh" content="30">
+    <meta http-equiv="refresh" content="{{$refresh}}">
 
 </head>
-<body>
+<body style="margin: 0px;padding: 0px;">
     <div id="app">
-        <main class="py-4">
+        <main class="">
             @yield('content')
         </main>
     </div>

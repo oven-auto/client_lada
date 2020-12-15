@@ -84,6 +84,10 @@
                         Мои модели
                     </a>
 
+                    <a class="btn btn-primary" href="{{route('banners.index')}}">
+                        Мои банеры
+                    </a>
+
                     <a class="btn btn-primary" href="{{route('cars.create')}}">
                         Добавить модель
                     </a>
@@ -91,6 +95,12 @@
                     <a class="btn btn-primary" href="{{route('issues.create')}}">
                         Новая выдача
                     </a>
+
+                    <a class="btn btn-primary" href="{{route('banners.create')}}">
+                        Добавить банер
+                    </a>
+
+                    
                 </div>
             </div>
         </div>

@@ -6,6 +6,8 @@
 
 require('./bootstrap');
 require('./function');
+require('./salute');
+//require('./rose');
 
 // window.Vue = require('vue');
 
