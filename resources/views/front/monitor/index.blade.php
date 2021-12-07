@@ -11,7 +11,7 @@
 				<img src="{{asset('storage/'.$issue->car->img)}}" id="car">
 		</div>
 
-		<div style="width: 40%; float:left; clear: right;>
+		<div style="width: 40%; float:left; clear: right;">
 				<h1>Уважаемый</h1>
 				<h1>{{$issue->full_name}}</h1>
 				<h1>Поздравляем с Вашей новой</h1>
