@@ -7,7 +7,7 @@
 	@include('front.monitor.animation')
     
 	<div class="container-fluid">
-		<div style="width: 50%;">
+		<div style="width: 50%;float:left;">
 				<img src="{{asset('storage/'.$issue->car->img)}}" id="car">
 		</div>
 
