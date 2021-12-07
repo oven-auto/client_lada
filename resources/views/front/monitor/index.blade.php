@@ -8,7 +8,7 @@
     
 	<div class="container-fluid">
 		<div style="width: 40%;">
-				<img src="{{asset('storage/'.$issue->car->img)}}" id="car">
+				<!--img src="{{asset('storage/'.$issue->car->img)}}" id="car"-->
 		</div>
 
 		<div style="width: 50%; float:left; clear: right;>
