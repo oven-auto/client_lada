@@ -13,13 +13,17 @@ class MonitorController extends Controller
     public function index()
     {
     	$now = date('Y.m.d H:i');
-
+        
+        DB::enableQueryLog();
     	$issue = Client::with('car')
     		->whereDate('issue_begin','<=',   DB::raw('CURRENT_DATE'))
     		->whereDate('issue_end','>=',     DB::raw('CURRENT_DATE'))
             ->whereTime('issue_begin','<=',   DB::raw('CURRENT_TIME'))
             ->whereTime('issue_end','>=',     DB::raw('CURRENT_TIME'))
     		->first();
+        dump(date('d-m-Y h:i"));
+        dd(DB::getQueryLog());
+        
         if($issue)   
         {
             $refresh = 30;
