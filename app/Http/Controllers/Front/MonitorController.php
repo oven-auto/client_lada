@@ -14,15 +14,15 @@ class MonitorController extends Controller
     {
     	$now = date('Y.m.d H:i');
         
-        DB::enableQueryLog();
+        //DB::enableQueryLog();
     	$issue = Client::with('car')
     		->whereDate('issue_begin','<=',   DB::raw('CURRENT_DATE'))
     		->whereDate('issue_end','>=',     DB::raw('CURRENT_DATE'))
             ->whereTime('issue_begin','<=',   DB::raw('CURRENT_TIME'))
             ->whereTime('issue_end','>=',     DB::raw('CURRENT_TIME'))
     		->first();
-        dump(date('d-m-Y h:i'));
-        dd(DB::getQueryLog());
+        //dump(date('d-m-Y h:i'));
+        //dd(DB::getQueryLog());
         
         if($issue)   
         {
