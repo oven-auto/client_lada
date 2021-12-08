@@ -21,7 +21,7 @@ class MonitorController extends Controller
             ->whereTime('issue_begin','<=',   DB::raw('CURRENT_TIME'))
             ->whereTime('issue_end','>=',     DB::raw('CURRENT_TIME'))
     		->first();
-        dump(date('d-m-Y h:i"));
+        dump(date('d-m-Y h:i'));
         dd(DB::getQueryLog());
         
         if($issue)   
