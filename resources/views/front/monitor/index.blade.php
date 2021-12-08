@@ -7,11 +7,11 @@
 	@include('front.monitor.animation')
     
 	<div class="container-fluid">
-		<div style="width: 50%;float:left;">
+		<div style="width: 60%;float:left;">
 				<img src="{{asset('storage/'.$issue->car->img)}}" id="car">
 		</div>
 
-		<div style="width: 40%; float:left; clear: right; padding-top:150px;">
+		<div style="width: 39%; float:left; clear: right; padding-top:150px;">
 				<h1>Уважаемый</h1>
 				<h1>{{$issue->full_name}}</h1>
 				<h1>Поздравляем с Вашей новой</h1>
