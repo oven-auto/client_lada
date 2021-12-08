@@ -12,7 +12,7 @@
 		</div>
 
 		<div style="width: 39%; float:left; clear: right; padding-top:150px;">
-				<h1>Уважаемый</h1>
+				<h1>Уважаемый(ая)</h1>
 				<h1>{{$issue->full_name}}</h1>
 				<h1>Поздравляем с Вашей новой</h1>
 				<h1>{{$issue->car->name}}!</h1>
